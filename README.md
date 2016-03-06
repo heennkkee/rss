@@ -15,16 +15,16 @@ Out of the box this will show your 5 latest "RSS news".
 
 Editable options are (followed with standard value): 
 
-*rssFile => rsscache/rss.xml
-*table => RSSFeed
-*newsCount => 5
-*db [
+* rssFile => rsscache/rss.xml
+* table => RSSFeed
+* newsCount => 5
+* db [
 ..*    dsn => sqlite:' . REALPATH(__DIR__) . '/src.sqlite (so in the same folder as the source document)
 ..*    username => null
 ..*    password => null
 ..*    driver_options => null
   ]
-*feedDescription [
+* feedDescription [
 ..*    title => CRSS easy feed
 ..*    link => http://www.github.com
 ..*    description => Description of the amazing feed.
