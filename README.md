@@ -35,7 +35,8 @@ Standard options are adjusted so it's as much "good to go" as possible. Highly r
 $rss->insertRSS(['LINK' => 'Link to your post', 'TITLE' => 'Title of the post', 'DESCRIPTION' => 'Short description of the item']);
 ```
 
-Inserts a new post to your database with approiate information needed to generate a new rss.xml file when requested.
+Inserts a new post to your database with appropriate information needed to generate a new rss.xml file when requested.
+The idea is to call this when you an event that should trigger the RSS to update occurs.
 
 ###Generate RSS Feed
 `$rss->getRSS();`
