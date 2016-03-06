@@ -21,7 +21,7 @@ class crss {
     public function __construct($params = [])
     {
         $options = [
-            'rssFile' => 'rss/rss.xml',
+            'rssFile' => 'rsscache/rss.xml',
             'table' => $this->table,
             'newsCount' => 5,
             'db' => [
