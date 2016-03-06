@@ -19,7 +19,7 @@ Editable options are (followed with standard value):
 * table => RSSFeed
 * newsCount => 5
 * db
-⋅⋅* dsn => sqlite:' . REALPATH(__DIR__) . '/src.sqlite (so in the same folder as the source document)
+..* dsn => sqlite:' . REALPATH(__DIR__) . '/src.sqlite (so in the same folder as the source document)
 ⋅⋅* username => null
 ⋅⋅* password => null
 ⋅⋅* driver_options => null
