@@ -1,0 +1,24 @@
+{
+    "name": "henaro/crss",
+    "type": "library",
+    "description": "PHP Class for creating an easy rss feed",
+		"keywords": ["rss"],
+    "homepage": "https://github.com/heennkkee/rss",
+		"license": "MIT",
+    "authors": [
+        {
+            "name": "Henrik Aronsson",
+            "email": "henrik.aronsson.94@gmail.com",
+            "role": "Student"
+        }
+    ],
+    "require": {
+        "php": ">=5.4"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "henaro\\": "src/"
+        }
+    }
+}
