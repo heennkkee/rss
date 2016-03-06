@@ -13,7 +13,7 @@ Out of the box this will show your 5 latest "RSS news".
 ###Initiation
 `$rss = new \henaro\rss\crss();`
 
-Editable options are (followed with standard value): 
+Editable options are (followed with standard value):
 
 * rssFile => rsscache/rss.xml
 * table => RSSFeed
@@ -23,7 +23,7 @@ Editable options are (followed with standard value):
   * username => null
   * password => null
   * driver_options => null
-* feedDescription 
+* feedDescription
   * title => CRSS easy feed
   * link => http://www.github.com
   * description => Description of the amazing feed.
@@ -31,7 +31,9 @@ Editable options are (followed with standard value):
 Standard options are adjusted so it's as much "good to go" as possible. Highly recommended to edit the feedDescription to fit your needs.
 
 ###Insert new item
-`$rss->insertRSS(['LINK' => 'Link to your post', 'TITLE' => 'Title of the post', 'DESCRIPTION' => 'Short description of the item']);`
+```
+$rss->insertRSS(['LINK' => 'Link to your post', 'TITLE' => 'Title of the post', 'DESCRIPTION' => 'Short description of the item']);
+```
 
 Inserts a new post to your database with approiate information needed to generate a new rss.xml file when requested.
 
