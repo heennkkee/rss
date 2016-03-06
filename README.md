@@ -12,3 +12,7 @@ Out of the box this will show your 5 latest "RSS news".
 
 To insert a new item to your RSS you call
 `$rss->insertRSS(['LINK' => 'Link to your post', 'TITLE' => 'Title of the post', 'DESCRIPTION' => 'Short description of the item']);`
+
+And next time something requests your RSS it'll update itself (as there is new data in the database that is newer than the creation of the rss.xml file).
+
+All SQL commands are made to work with SQLite, nothing else.
