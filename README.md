@@ -13,6 +13,8 @@ Out of the box this will show your 5 latest "RSS news".
 NOTE:
 This library does not cover any databasesecurity at all. The user will have to make sure nobody can "have fun" with your stuff.
 
+//TESTING SOME GIT COMMITING
+
 ###Initiation
 `$rss = new \henaro\rss\crss();`
 
