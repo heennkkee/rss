@@ -1,3 +1,5 @@
+https://travis-ci.org/heennkkee/rss.svg?branch=master
+
 #LICENSE
 This software is distributed under the MIT License.
 
