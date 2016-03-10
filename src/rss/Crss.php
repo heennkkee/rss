@@ -82,7 +82,7 @@ class Crss {
 
         } catch(\Exception $e) {
             //Change to true to debug database connection
-            if (false) {
+            if (true) {
                 // For debug purpose, shows all connection details
                 throw $e;
             } else {
