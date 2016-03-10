@@ -1,6 +1,6 @@
 <?php
 if (isset($_POST['TITLE'])) {
-  include('../src/Crss.php');
+  include('../src/rss/Crss.php');
   $rss = new \henaro\rss\Crss();
   $rss->insertRSS(['LINK' => $_POST['LINK'], 'TITLE' => $_POST['TITLE'], 'DESCRIPTION' => $_POST['DESCRIPTION']]);
   Header('Location: ' . $_SERVER['PHP_SELF']);

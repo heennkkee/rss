@@ -1,6 +1,6 @@
 <?php
 
-include('../src/Crss.php');
+include('../src/rss/Crss.php');
 
 $rss = new \henaro\rss\Crss();
 
