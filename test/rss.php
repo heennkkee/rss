@@ -1,6 +1,6 @@
 <?php
 
-include('../src/rss/Crss.php');
+include('../autoloader.php');
 
 $rss = new \henaro\rss\Crss();
 
