@@ -1,5 +1,5 @@
 <?php
 
-$rss = new \henaro\rss\Crss();
+$rss = new \henaro\rss\Crss(['rssFile' => REALPATH(__DIR__) . '/rsscache/rss.xml']);
 
 $rss->getRSS();

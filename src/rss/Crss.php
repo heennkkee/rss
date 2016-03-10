@@ -21,7 +21,7 @@ class Crss {
     public function __construct($params = [])
     {
         $options = [
-            'rssFile' => 'rsscache/rss.xml',
+            'rssFile' => REALPATH(__DIR__) . '/rsscache/rss.xml',
             'table' => $this->table,
             'newsCount' => 5,
             'db' => [
