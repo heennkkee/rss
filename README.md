@@ -1,4 +1,4 @@
-https://travis-ci.org/heennkkee/rss.svg?branch=master
+[![Build Status](https://travis-ci.org/heennkkee/rss.svg?branch=master)](https://travis-ci.org/heennkkee/rss)
 
 #LICENSE
 This software is distributed under the MIT License.
