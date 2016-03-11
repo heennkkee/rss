@@ -28,7 +28,8 @@ class Crss {
                 'dsn' => 'sqlite:' . REALPATH(__DIR__) . '/src.sqlite',
                 'username' => null,
                 'password' => null,
-                'driver_options' => null
+                'driver_options' => null,
+                'debug' => false
             ],
             'feedDescription' => [
                 'title' => 'CRSS easy feed',
@@ -82,7 +83,7 @@ class Crss {
 
         } catch(\Exception $e) {
             //Change to true to debug database connection
-            if (true) {
+            if ($this->dbOptions['debug']) {
                 // For debug purpose, shows all connection details
                 throw $e;
             } else {
