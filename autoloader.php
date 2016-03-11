@@ -15,7 +15,6 @@ spl_autoload_register(
     function ($class) {
 
         // project-specific namespace prefix
-        //$prefix = 'Foo\\Bar\\';
         $prefix = 'henaro\\';
 
         // base directory for the namespace prefix
