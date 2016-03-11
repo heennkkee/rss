@@ -8,6 +8,7 @@ class Crss {
     private $rssFile;
     private $valid = false;
     private $dbOptions = [];
+    private $dbStructure;
     private $db;
     private $newsCount;
     private $feedDescription;
@@ -16,7 +17,6 @@ class Crss {
  * Initiates the class, takes parameters as input but should work with standard settings.
  * Connects to the DB and makes sure the table exists.
  * @param $params is the input to adjust standard settings. I recommend to change only the 'feedDescription' part.
- * @return void
  */
     public function __construct($params = [])
     {
