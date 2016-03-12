@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+    <title>CRSS easy feed</title>
+    <link>http://www.github.com</link>
+    <description>Description of the amazing feed.</description>
+    <item>
+        <title>Title of our new one</title>
+        <link>NewLink.com</link>
+        <description>Description of diz.</description>
+        <pubDate>Sat, 12 Mar 16 15:01:54 +0100</pubDate>
+    </item>
+</channel>
+</rss>

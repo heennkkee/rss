@@ -2,7 +2,7 @@
 
 namespace henaro\rss;
 
-class Crss {
+class CrssTest extends \PHPUnit_Framework_TestCase {
 
     private $table = 'RSSFeed';
     private $rssFile;
@@ -20,6 +20,12 @@ class Crss {
      */
     public function __construct($params = [])
     {
+
+    }
+
+    public function testConstruct($params = [])
+    {
+        date_default_timezone_set('Europe/Stockholm');
         $options = [
             'rssFile' => REALPATH(__DIR__) . '/rsscache/rss.xml',
             'table' => $this->table,
@@ -64,6 +70,11 @@ class Crss {
 
         $this->connect();
         $this->createDB();
+
+        $this->clearRSS();
+        $this->insertRSS(['LINK' => 'NewLink.com', 'TITLE' => 'Title of our new one', 'DESCRIPTION' => 'Description of diz.']);
+
+        $this->getRSS();
     }
 
     /**
@@ -82,7 +93,7 @@ class Crss {
      *
      * @return void
      */
-    private function connect()
+    private function Connect()
     {
         try {
             $this->db = new \PDO(
@@ -118,7 +129,6 @@ class Crss {
      */
     private function checkValidity()
     {
-
         if (!is_writable($this->rssFile)) {
             $this->valid = false;
             return;
