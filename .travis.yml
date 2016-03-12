@@ -4,5 +4,13 @@ php:
     - 5.4
     - hhvm
 
+before_script:
+    - wget https://scrutinizer-ci.com/ocular.phar
+
+
 script:
-    - phpunit --bootstrap autoloader.php test/rss.php
+    - phpunit --bootstrap autoloader.php --coverage-clover coverage.clover test/rss.php
+
+
+after_script:
+    - php ocular.phar code-coverage:upload --format=php-clover coverage.clover
