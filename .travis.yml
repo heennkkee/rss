@@ -9,7 +9,7 @@ before_script:
     - php ocular.phar self-update
 
 script:
-    - phpunit --bootstrap autoloader.php --coverage-clover coverage.clover test
+    - phpunit --stderr --bootstrap autoloader.php --coverage-clover coverage.clover test
 
 
 after_script:
