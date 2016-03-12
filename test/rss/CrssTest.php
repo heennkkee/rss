@@ -211,7 +211,7 @@ EOD;
             $this->createRSS();
         }
 
-        header('Content-type: application/rss+xml; charset=UTF-8');
+    //    header('Content-type: application/rss+xml; charset=UTF-8');
         readfile($this->rssFile);
     }
 

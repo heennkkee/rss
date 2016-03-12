@@ -8,7 +8,7 @@ before_script:
     - wget https://scrutinizer-ci.com/ocular.phar
 
 script:
-    - phpunit --stderr --bootstrap autoloader.php --coverage-clover coverage.clover test
+    - phpunit --bootstrap autoloader.php --coverage-clover coverage.clover test
 
 
 after_script:
