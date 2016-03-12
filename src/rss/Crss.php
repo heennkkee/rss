@@ -14,10 +14,10 @@ class Crss {
     private $feedDescription;
 
     /**
-    * Initiates the class, takes parameters as input but should work with standard settings.
-    * Connects to the DB and makes sure the table exists.
-    * @param $params is the input to adjust standard settings. I recommend to change only the 'feedDescription' part.
-    */
+     * Initiates the class, takes parameters as input but should work with standard settings.
+     * Connects to the DB and makes sure the table exists.
+     * @param $params is the input to adjust standard settings. I recommend to change only the 'feedDescription' part.
+     */
     public function __construct($params = [])
     {
         $options = [
@@ -67,10 +67,10 @@ class Crss {
     }
 
     /**
-    * Internal function for connecting to the database
-    *
-    * @return void
-    */
+     * Internal function for connecting to the database
+     *
+     * @return void
+     */
     private function connect()
     {
         try {
@@ -100,11 +100,11 @@ class Crss {
     }
 
     /**
-    * Compares RSS file created timestamp and database timestamp to judge if new RSS file is needed
-    *
-    * Sets internal variable $this->valid to true/false depending if new file needs to be generate
-    * @return void
-    */
+     * Compares RSS file created timestamp and database timestamp to judge if new RSS file is needed
+     *
+     * Sets internal variable $this->valid to true/false depending if new file needs to be generate
+     * @return void
+     */
     private function checkValidity()
     {
 
@@ -134,10 +134,10 @@ class Crss {
     }
 
     /**
-    * Creates a new RSS File with information from the database. Max amount of news is configured in the initiation.
-    *
-    * @return void
-    */
+     * Creates a new RSS File with information from the database. Max amount of news is configured in the initiation.
+     *
+     * @return void
+     */
     private function createRSS()
     {
         $file = fopen($this->rssFile, "w+");
@@ -178,10 +178,10 @@ EOD;
     }
 
     /**
-    * Function that should be called to receive the RSS feed.
-    * Checks if the latest RSS File is up to date, if not, generates a new one.
-    * @return void
-    */
+     * Function that should be called to receive the RSS feed.
+     * Checks if the latest RSS File is up to date, if not, generates a new one.
+     * @return void
+     */
     public function getRSS()
     {
         $this->checkValidity();
@@ -195,11 +195,11 @@ EOD;
     }
 
     /**
-    * Inserts information to RSS database
-    * @param $input should be an associative array with three pars TITLE, LINK, DESCRIPTION
-    *
-    * @return void
-    */
+     * Inserts information to RSS database
+     * @param $input should be an associative array with three pars TITLE, LINK, DESCRIPTION
+     *
+     * @return void
+     */
     public function insertRSS($input = [])
     {
         $stmt = $this->db->prepare("INSERT INTO  " . $this->table . " (TITLE, LINK, DESCRIPTION, CREATED) VALUES (?, ?, ?, datetime('now', 'localtime'))");
