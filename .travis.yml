@@ -6,7 +6,6 @@ php:
 
 before_script:
     - wget https://scrutinizer-ci.com/ocular.phar
-    - php ocular.phar self-update
 
 script:
     - phpunit --stderr --bootstrap autoloader.php --coverage-clover coverage.clover test
