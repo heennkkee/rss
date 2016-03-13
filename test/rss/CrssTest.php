@@ -18,4 +18,10 @@ class CrssTest extends \PHPUnit_Framework_TestCase {
         $this->setExpectedException('PDOException');
         $rss = new \henaro\rss\Crss(['db' => ['debug' => true, 'dsn' => 'ThisBetterFail']]);
     }
+
+    public function testCreateRSS()
+    {
+        $rss = new \henaro\rss\Crss(['rssFile' => 'willFail', 'sendHeader' => false]);
+        $rss->getRSS();
+    }
 }
