@@ -22,7 +22,7 @@ class CrssTest extends \PHPUnit_Framework_TestCase
 
     public function testCreateRSS()
     {
-        $rss = new \henaro\rss\Crss(['rssFile' => 'fileinmainfolder.xml', 'sendHeader' => false]);
+        $rss = new \henaro\rss\Crss(['rssFile' => 'fileinmainfolder', 'sendHeader' => false]);
         $rss->getRSS();
     }
 }
