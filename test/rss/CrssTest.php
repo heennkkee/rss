@@ -12,4 +12,9 @@ class CrssTest extends \PHPUnit_Framework_TestCase {
         $rss->insertRSS(['TITLE' => 'New feed', 'LINK' => 'http://github.com', 'DESCRIPTION' => 'Hopefully this feed will show as expected.']);
         $rss->getRSS();
     }
+
+    public function testFailDB()
+    {
+        $rss = new \henaro\rss\Crss(['db' => ['debug' => true, 'dsn' => 'ThisBetterFail']]);
+    }
 }
