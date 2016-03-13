@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.org/heennkkee/rss.svg?branch=master)](https://travis-ci.org/heennkkee/rss)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/heennkkee/rss/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/heennkkee/rss/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/heennkkee/rss/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/heennkkee/rss/?branch=master)
 
 #LICENSE
 This software is distributed under the MIT License.
