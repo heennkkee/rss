@@ -5,22 +5,10 @@
     <link>http://www.github.com</link>
     <description>Description of the amazing feed.</description>
     <item>
-        <title>Nyaste RSS Feededen</title>
-        <link>http://google.com</link>
-        <description>RSS feed som är bra och fin.</description>
-        <pubDate>Fri, 11 Mar 16 06:58:45 +0000</pubDate>
-    </item>
-    <item>
-        <title>Megatest</title>
-        <link>http://www.google.com</link>
-        <description>Ett inlägg till</description>
-        <pubDate>Sun, 06 Mar 16 20:14:35 +0000</pubDate>
-    </item>
-    <item>
-        <title>test</title>
-        <link>http://www.google.com</link>
-        <description>testtts</description>
-        <pubDate>Sun, 06 Mar 16 20:14:20 +0000</pubDate>
+        <title>New feed</title>
+        <link>http://github.com</link>
+        <description>Hopefully this feed will show as expected.</description>
+        <pubDate>Sun, 13 Mar 16 19:23:02 +0100</pubDate>
     </item>
 </channel>
 </rss>

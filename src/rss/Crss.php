@@ -20,6 +20,7 @@ class Crss {
      */
     public function __construct($params = [])
     {
+        date_default_timezone_set('Europe/Stockholm');
         $options = [
             'rssFile' => REALPATH(__DIR__) . '/rsscache/rss.xml',
             'table' => $this->table,
