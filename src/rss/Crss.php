@@ -12,7 +12,7 @@ class Crss {
     private $db;
     private $newsCount;
     private $feedDescription;
-
+    private $sendHeader;
     /**
      * Initiates the class, takes parameters as input but should work with standard settings.
      * Connects to the DB and makes sure the table exists.
@@ -25,6 +25,7 @@ class Crss {
             'rssFile' => REALPATH(__DIR__) . '/rsscache/rss.xml',
             'table' => $this->table,
             'newsCount' => 5,
+            'sendHeader' => true,
             'db' => [
                 'dsn' => 'sqlite:' . REALPATH(__DIR__) . '/src.sqlite',
                 'username' => null,
@@ -54,6 +55,7 @@ class Crss {
         $this->dbOptions = $options['db'];
         $this->newsCount = $options['newsCount'];
         $this->feedDescription = $options['feedDescription'];
+        $this->sendHeader = $options['sendHeader'];
 
         $this->dbStructure = 'CREATE TABLE IF NOT EXISTS ' . $this->table . ' (
             ID INTEGER PRIMARY KEY NOT NULL,
@@ -202,7 +204,10 @@ EOD;
             $this->createRSS();
         }
 
-        header('Content-type: application/rss+xml; charset=UTF-8');
+        if ($this->sendHeader) {
+            header('Content-type: application/rss+xml; charset=UTF-8');
+        }
+        
         readfile($this->rssFile);
     }
 
