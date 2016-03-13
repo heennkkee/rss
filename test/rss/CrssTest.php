@@ -2,7 +2,8 @@
 
 namespace henaro\rss;
 
-class CrssTest extends \PHPUnit_Framework_TestCase {
+class CrssTest extends \PHPUnit_Framework_TestCase
+{
 
     public function testComplete()
     {

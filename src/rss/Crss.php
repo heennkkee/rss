@@ -2,7 +2,8 @@
 
 namespace henaro\rss;
 
-class Crss {
+class Crss
+{
 
     private $table = 'RSSFeed';
     private $rssFile;
@@ -108,7 +109,8 @@ class Crss {
         $this->db->setAttribute(\PDO::ATTR_DEFAULT_FETCH_MODE, \PDO::FETCH_OBJ);
     }
 
-    public function createDB() {
+    public function createDB()
+    {
         $stmt = $this->db->prepare($this->dbStructure);
         $stmt->execute();
     }
@@ -207,7 +209,7 @@ EOD;
         if ($this->sendHeader) {
             header('Content-type: application/rss+xml; charset=UTF-8');
         }
-        
+
         readfile($this->rssFile);
     }
 

@@ -1,8 +1,8 @@
 <?php
 if (isset($_POST['TITLE'])) {
-  $rss = new \henaro\rss\Crss();
-  $rss->insertRSS(['LINK' => $_POST['LINK'], 'TITLE' => $_POST['TITLE'], 'DESCRIPTION' => $_POST['DESCRIPTION']]);
-  Header('Location: ' . $_SERVER['PHP_SELF']);
+    $rss = new \henaro\rss\Crss();
+    $rss->insertRSS(['LINK' => $_POST['LINK'], 'TITLE' => $_POST['TITLE'], 'DESCRIPTION' => $_POST['DESCRIPTION']]);
+    Header('Location: ' . $_SERVER['PHP_SELF']);
 }
 ?>
 <html>
